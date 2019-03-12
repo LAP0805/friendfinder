@@ -26,7 +26,7 @@ const friends = [{
     },
     {
         name: "Blonk",
-        image: "images/aline5.png",
+        image: "images/alien5.png",
         scores: [5,1,1,4,2,5,3,5,4,5],
         description: "Blonk is a true politico- spending her free time advocating for sub-alien species rights and campaigning the galactic empire for better working conditions on mining planets. She cares deeply about her causes, but also loves a good party! Blonk knows al lthe best spots on any planet for a good time, so buckle up!"
 
