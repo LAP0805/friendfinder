@@ -36,18 +36,17 @@ function determineFriend(arrayOfObjects) {
     console.log(scoresArray)
 
     let winner = 0;
-    for (var i = 0; i < scoresArray.length; i++) {
-        if (scoresArray[i] > scoresArray[i + 1]) {
-            winner = scoresArray[i + 1]
+    for (var i = 1; i < scoresArray.length; i++) {
+        if (scoresArray[i] < scoresArray[winner]) {
+            winner = i;
         }
     }
-    console.log(winner)
-    winnerIndex = scoresArray.indexOf(winner)
-    console.log("winner index: " + winnerIndex);
+    
+    console.log("winner: " + winner);
     return {
-        name: friends[winnerIndex].name,
-        image: friends[winnerIndex].image,
-        description: friends[winnerIndex].description
+        name: friends[winner].name,
+        image: friends[winner].image,
+        description: friends[winner].description
     }
 
 
