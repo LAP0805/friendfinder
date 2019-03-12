@@ -8,7 +8,7 @@ const friends = [{
         name:"Blerg",
         image: "images/alien2.png",
         scores:[5,1,3,3,2,3,3,5,2,5],
-        description: "Blerg is a little jumpy these days after his planet was invaded by the galactic empire. He enjoys monitoring the local radio waves for marauders and saving unsuspecting space-tourists from certain death. A true hero, Blerg is inter-galactic outlaw, but a folk hero to many species."
+        description: "Blerg is a little jumpy these days after his planet was invaded by the galactic empire. He enjoys monitoring the local radio waves for marauders and saving unsuspecting space-tourists from certain death. A true hero, Blerg is an inter-galactic outlaw, but a folk hero to many species."
 
     },
     {
