@@ -19,6 +19,9 @@ $("#submitSurvey").on("click", () => {
       $.post("/api/friends", newAlien)
         .then(function(data) {
           console.log(data)
+          $("#newPalName").text(data.name);
+          $("#newPal").attr("src", data.image);
+          $("#newPalInfo").text(data.description);
           
     });
     
