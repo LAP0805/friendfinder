@@ -1,13 +1,11 @@
 
 
-let newAlien= {};
+
 
 $("#takeSurvey").on("click", () =>{
   document.location.href="survey.html"
 })
 
-
-let url = window.location.origin;
 
 $("#submitSurvey").on("click", () => {
       let newAlien = {
@@ -17,15 +15,16 @@ $("#submitSurvey").on("click", () => {
         description: "A human on a quest for new friends!"
         
       }
-      console.log(newAlien)
+      
       $.post("/api/friends", newAlien)
         .then(function(data) {
-          alert("Adding character...");
+          console.log(data)
           
-       
     });
     
 });
+
+
 
 
 
