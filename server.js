@@ -1,6 +1,7 @@
 const express= require("express");
 const path = require("path");
 const html = require("./app/routing/htmlRoutes")
+const api = require("./app/routing/apiRoutes")
 const PORT = 8080;
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(express.static(path.join(__dirname, './app/public')));
 
 //call the html routes//
 html(app)
+api(app);
 
 
 app.listen(PORT, () =>{
