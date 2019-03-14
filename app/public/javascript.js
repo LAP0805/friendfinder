@@ -39,7 +39,6 @@ $("#surveyForm").on("submit", function(event){
       $("#newPalInfo").text(data.description);
 
     });
-    alert("should show modal")
     $("#alienPal").modal("show")
     
   }
