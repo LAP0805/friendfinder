@@ -19,128 +19,150 @@
     <div class="container">
         <div class="jumbotron survey">
 
-            <form>
+            <form class="needs-validation" id="surveyForm" novalidate>
                 <div class="form-group">
                     <label for="name">
                         <h2>Name:</h2>
                     </label>
-                    <input type="text" class="form-control" id="name" placeholder="i.e: Gorgon The Great">
+                    <input type="text" class="form-control" id="name" placeholder="i.e: Gorgon The Great" required>
+                    <div class="invalid-feedback">Please enter a name</div>
                 </div>
                 <div class="form-group">
                     <label for="name">
                         <h2>Link to a pic of yourself: </h2>
                     </label>
-                    <input type="text" class="form-control" id="picture" placeholder="i.e: http://www.images.com/me.jpg">
+                    <input type="text" class="form-control" id="picture" placeholder="i.e: http://www.images.com/me.jpg" required>
+                    <div class="invalid-feedback">Please link to a picture of yourself</div>
                 </div>
                 <h5>Please rate how you feel about the following statements:</h5>
                 <div class="form-group">
                     <label for="q1"><strong>I love to travel to new and exotic planets: </strong></label>
-                    <select class="form-control" id="q1">
-                        <option>1 -Strongly disagree</option>
-                        <option>2 -Somewhat disagree</option>
-                        <option>3 -Neutral</option>
-                        <option>4 -Somewhat agree</option>
-                        <option>5 -Strongly agree</option>
+                    <select class="custom-select" id="q1" required>
+                        <option selected value="">Select</option>
+                        <option value="1">1 -Strongly disagree</option>
+                        <option value="2">2 -Somewhat disagree</option>
+                        <option value="3">3 -Neutral</option>
+                        <option value="4">4 -Somewhat agree</option>
+                        <option value="5">5 -Strongly agree</option>
                     </select>
+                    <div class="invalid-feedback">Please select an answer</div>
                 </div>
                 <div class="form-group">
                     <label for="q2"><strong>I am a loyal servant of the galactic empire: </strong></label>
-                    <select class="form-control" id="q2">
-                        <option>1 -Strongly disagree</option>
-                        <option>2 -Somewhat disagree</option>
-                        <option>3 -Neutral</option>
-                        <option>4 -Somewhat agree</option>
-                        <option>5 -Strongly agree</option>
+                    <select class="custom-select" id="q2" required>
+                        <option selected value="">Select</option>
+                        <option value="1">1 -Strongly disagree</option>
+                        <option value="2">2 -Somewhat disagree</option>
+                        <option value="3">3 -Neutral</option>
+                        <option value="4">4 -Somewhat agree</option>
+                        <option value="5">5 -Strongly agree</option>
                     </select>
+                    <div class="invalid-feedback">Please select an answer</div>
                 </div>
                 <div class="form-group">
                     <label for="q3"><strong>I feel that earth is overrated:</strong></label>
-                    <select class="form-control" id="q3">
-                        <option>1 -Strongly disagree</option>
-                        <option>2 -Somewhat disagree</option>
-                        <option>3 -Neutral</option>
-                        <option>4 -Somewhat agree</option>
-                        <option>5 -Strongly agree</option>
+                    <select class="custom-select" id="q3" required>
+                        <option selected value="">Select</option>
+                        <option value="1">1 -Strongly disagree</option>
+                        <option value="2">2 -Somewhat disagree</option>
+                        <option value="3">3 -Neutral</option>
+                        <option value="4">4 -Somewhat agree</option>
+                        <option value="5">5 -Strongly agree</option>
                     </select>
+                    <div class="invalid-feedback">Please select an answer</div>
                 </div>
                 <div class="form-group">
                     <label for="q4"><strong>I take great care to keep my spaceship clean and tidy: </strong></label>
-                    <select class="form-control" id="q4">
-                        <option>1 -Strongly disagree</option>
-                        <option>2 -Somewhat disagree</option>
-                        <option>3 -Neutral</option>
-                        <option>4 -Somewhat agree</option>
-                        <option>5 -Strongly agree</option>
+                    <select class="custom-select" id="q4" required>
+                        <option selected value="">Select</option>
+                        <option value="1">1 -Strongly disagree</option>
+                        <option value="2">2 -Somewhat disagree</option>
+                        <option value="3">3 -Neutral</option>
+                        <option value="4">4 -Somewhat agree</option>
+                        <option value="5">5 -Strongly agree</option>
                     </select>
+                    <div class="invalid-feedback">Please select an answer</div>
                 </div>
                 <div class="form-group">
                     <label for="q5"><strong>There is nothing greater than a nice relaxing dinner in Alpha Centauri:</strong></label>
-                    <select class="form-control" id="q5">
-                        <option>1 -Strongly disagree</option>
-                        <option>2 -Somewhat disagree</option>
-                        <option>3 -Neutral</option>
-                        <option>4 -Somewhat agree</option>
-                        <option>5 -Strongly agree</option>
+                    <select class="custom-select" id="q5" required>
+                        <option selected value="">Select</option>
+                        <option value="1">1 -Strongly disagree</option>
+                        <option value="2">2 -Somewhat disagree</option>
+                        <option value="3">3 -Neutral</option>
+                        <option value="4">4 -Somewhat agree</option>
+                        <option value="5">5 -Strongly agree</option>
                     </select>
+                    <div class="invalid-feedback">Please select an answer</div>
                 </div>
                 <div class="form-group">
                     <label for="q6"><strong>I enjoy long walks on the holo-deck:</strong></label>
-                    <select class="form-control" id="q6">
-                        <option>1 -Strongly disagree</option>
-                        <option>2 -Somewhat disagree</option>
-                        <option>3 -Neutral</option>
-                        <option>4 -Somewhat agree</option>
-                        <option>5 -Strongly agree</option>
+                    <select class="custom-select" id="q6" required>
+                        <option selected value="">Select</option>
+                        <option value="1">1 -Strongly disagree</option>
+                        <option value="2">2 -Somewhat disagree</option>
+                        <option value="3">3 -Neutral</option>
+                        <option value="4">4 -Somewhat agree</option>
+                        <option value="5">5 -Strongly agree</option>
                     </select>
+                    <div class="invalid-feedback">Please select an answer</div>
                 </div>
                 <div class="form-group">
                     <label for="q7"><strong>I prefer a quiet evening in with a good book on native life forms: </strong></label>
-                    <select class="form-control" id="q7">
-                        <option>1 -Strongly disagree</option>
-                        <option>2 -Somewhat disagree</option>
-                        <option>3 -Neutral</option>
-                        <option>4 -Somewhat agree</option>
-                        <option>5 -Strongly agree</option>
+                    <select class="custom-select" id="q7" required>
+                        <option selected value="">Select</option>
+                        <option value="1">1 -Strongly disagree</option>
+                        <option value="2">2 -Somewhat disagree</option>
+                        <option value="3">3 -Neutral</option>
+                        <option value="4">4 -Somewhat agree</option>
+                        <option value="5">5 -Strongly agree</option>
                     </select>
+                    <div class="invalid-feedback">Please select an answer</div>
                 </div>
                 <div class="form-group">
                     <label for="q8"><strong>I have never abducted anyone: </strong></label>
-                    <select class="form-control" id="q8">
-                        <option>1 -Strongly disagree</option>
-                        <option>2 -Somewhat disagree</option>
-                        <option>3 -Neutral</option>
-                        <option>4 -Somewhat agree</option>
-                        <option>5 -Strongly agree</option>
+                    <select class="custom-select" id="q8" required>
+                        <option selected value="">Select</option>
+                        <option value="1">1 -Strongly disagree</option>
+                        <option value="2">2 -Somewhat disagree</option>
+                        <option value="3">3 -Neutral</option>
+                        <option value="4">4 -Somewhat agree</option>
+                        <option value="5">5 -Strongly agree</option>
                     </select>
+                    <div class="invalid-feedback">Please select an answer</div>
                 </div>
                 <div class="form-group">
                     <label for="q9"><strong>I am the life of the inter-planetary party: </strong></label>
-                    <select class="form-control" id="q9">
-                        <option>1 -Strongly disagree</option>
-                        <option>2 -Somewhat disagree</option>
-                        <option>3 -Neutral</option>
-                        <option>4 -Somewhat agree</option>
-                        <option>5 -Strongly agree</option>
+                    <select class="custom-select" id="q9" required>
+                        <option selected value="">Select</option>
+                        <option value="1">1 -Strongly disagree</option>
+                        <option value="2">2 -Somewhat disagree</option>
+                        <option value="3">3 -Neutral</option>
+                        <option value="4">4 -Somewhat agree</option>
+                        <option value="5">5 -Strongly agree</option>
                     </select>
+                    <div class="invalid-feedback">Please select an answer</div>
                 </div>
                 <div class="form-group">
                     <label for="q10"><strong>I believe probes are outdated and barbaric: </strong></label>
-                    <select class="form-control" id="q10">
-                        <option>1 -Strongly disagree</option>
-                        <option>2 -Somewhat disagree</option>
-                        <option>3 -Neutral</option>
-                        <option>4 -Somewhat agree</option>
-                        <option>5 -Strongly agree</option>
+                    <select class="custom-select" id="q10" required>
+                        <option selected value="">Select</option>
+                        <option value="1">1 -Strongly disagree</option>
+                        <option value="2">2 -Somewhat disagree</option>
+                        <option value="3">3 -Neutral</option>
+                        <option value="4">4 -Somewhat agree</option>
+                        <option value="5">5 -Strongly agree</option>
                     </select>
+                    <div class="invalid-feedback">Please select an answer</div>
                 </div>
                 <br>
-                <button type="button" class="btn btn-primary" id="submitSurvey" data-toggle="modal" data-target="#alienPal">
+                <button type="submit" class="btn btn-primary" id="submitSurvey">
                     Submit and find you new pal!
                 </button>
             </form>
         </div>
 
-        <!--Modal, not working-->
+        <!--Modal-->
         <div class="modal fade" id="alienPal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -170,19 +192,17 @@
 
     </div>
 
+    
 
 
 
 
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
     <script src="javascript.js"></script>
 </body>
 
