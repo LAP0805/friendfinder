@@ -41,7 +41,7 @@ function determineFriend(arrayOfObjects) {
             winner = i;
         }
     }
-    
+
     console.log("winner: " + winner);
     return {
         name: friends[winner].name,

@@ -1,46 +1,53 @@
-body{
+body {
     background-image: url("../images/background2.jpg");
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
-h1{
-    text-align:center;
-    margin:20px;
+
+h1 {
+    text-align: center;
+    margin: 20px;
     font-family: 'Ranchers', cursive;
-    color:rgb(219, 216, 216);
+    color: rgb(219, 216, 216);
 }
-h3{
-    text-align:center;
+
+h3 {
+    text-align: center;
     font-family: "Ranchers", cursive;
 }
 
-.title{
-    font-size:60px;
-}
-.jumbotron{
-    text-align: center;
-    opacity:0.9;  
-    margin:20px;  
-}
-.survey{
-    text-align:left;
-}
-.lildudes{
-    height:200px;
-    width:200px
+.title {
+    font-size: 60px;
 }
 
-h4{
-    color:white;
-    text-decoration:none;
-    text-align:center;
+.jumbotron {
+    text-align: center;
+    opacity: 0.9;
+    margin: 20px;
 }
-#newPal{
-    max-height:200px;
-    max-width:200px;
-    float:left;
-    margin:5px;
+
+.survey {
+    text-align: left;
 }
-#newPalName{
-    text-align:center;
+
+.lildudes {
+    height: 200px;
+    width: 200px
+}
+
+h4 {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#newPal {
+    max-height: 200px;
+    max-width: 200px;
+    float: left;
+    margin: 5px;
+}
+
+#newPalName {
+    text-align: center;
 }

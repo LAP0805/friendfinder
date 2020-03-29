@@ -1,45 +1,44 @@
-let isValid=false;
-(function() {
+let isValid = false;
+(function () {
   'use strict';
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.getElementsByClassName('needs-validation');
     // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
+    var validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
-          isValid=false
-        }
-        else{
-          isValid=true;
+          isValid = false
+        } else {
+          isValid = true;
           event.preventDefault();
-          if(isValid===true){
-          let newAlien = {
-            name: $("#name").val().trim(),
-            image: $("#picture").val().trim(),
-            scores: [parseInt($("#q1").val()), parseInt($("#q2").val()), parseInt($("#q3").val()), parseInt($("#q4").val()), parseInt($("#q5").val()), parseInt($("#q6").val()), parseInt($("#q7").val()), parseInt($("#q8").val()), parseInt($("#q9").val()), parseInt($("#q10").val())],
-            description: "A human on a quest for new friends!"
-           
-          }
+          if (isValid === true) {
+            let newAlien = {
+              name: $("#name").val().trim(),
+              image: $("#picture").val().trim(),
+              scores: [parseInt($("#q1").val()), parseInt($("#q2").val()), parseInt($("#q3").val()), parseInt($("#q4").val()), parseInt($("#q5").val()), parseInt($("#q6").val()), parseInt($("#q7").val()), parseInt($("#q8").val()), parseInt($("#q9").val()), parseInt($("#q10").val())],
+              description: "A human on a quest for new friends!"
 
-          $.post("/api/friends", newAlien)
-            .then(function (data) {
-              console.log(data)
-              $("#newPalName").text(data.name);
-              $("#newPal").attr("src", data.image);
-              $("#newPalInfo").text(data.description);
-        
-            });
+            }
+
+            $.post("/api/friends", newAlien)
+              .then(function (data) {
+                console.log(data)
+                $("#newPalName").text(data.name);
+                $("#newPal").attr("src", data.image);
+                $("#newPalInfo").text(data.description);
+
+              });
             $("#alienPal").modal("show");
             $("#submitSurvey").attr("disabled", true);
           }
         }
-        
-          form.classList.add('was-validated');
-        
-      
+
+        form.classList.add('was-validated');
+
+
       }, false);
     });
   }, false);
@@ -48,7 +47,7 @@ let isValid=false;
 
 
 
- 
+
 
 
 
